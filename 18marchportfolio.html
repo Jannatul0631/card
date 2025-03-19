@@ -19,7 +19,9 @@
             text-align: end;
             background-color: bisque;
             color: black;
-            font-weight: 400px;
+            font-weight: 400;
+            width: 100%;
+            padding: 30px 10px;
             
         }
         .navbar ul{
@@ -34,7 +36,7 @@
             color: black;
         }
         
-        h1{
+        .menu{
             text-align: center;
             margin-top: 30PX;
             margin-bottom: 30px;
@@ -47,6 +49,15 @@
             margin-bottom: 20px;
             color: orange;
             text-transform: uppercase;
+            font-size: 32px;
+        }
+        .glry{
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            color: orange;
+            text-transform: uppercase;
+            font-size: 32px;
         }
         .item{
             border: 1px solid orange;
@@ -56,12 +67,31 @@
             grid-template-columns: repeat(4,1fr);
             grid-gap: 80px;
         }
+        .clients{
+            display: grid;
+            grid-template-columns: repeat(3,2fr);
+            grid-gap: 10px;
+        }
+        .pgal{
+            display: grid;
+            grid-template-columns: repeat(3,2fr);
+            grid-gap: 5px;
+        }
         .bdy{
             padding: 30px;
         }
         .item img{
             height: 200px;
             width: 300px;
+        }
+        .client img{
+            height: 100px;
+            width: 150px;
+            padding: 10px;
+        }
+        .gal img{
+            height: 250px;
+            width: 350px;
         }
         .navbar ul{
             justify-content: end;
@@ -74,32 +104,56 @@
             border-radius: 10px;
             box-shadow: 5px 5px 5px orange;
         }
-        .clients{
-            display: grid;
-            grid-template-columns: repeat(3,2fr);
-            grid-gap: 10px;
+        .client{
+            display: flex;
+            align-items: center;
         }
-        .client img{
+        .gal{
+            /* border: 1px; */
+            margin: 50px;
+        }
+        
+        .header{
+            display: flex;
+            align-items: center;
+        }
+        .logo img{
             height: 100px;
-            width: 150px;
-            padding: 10px;
+            width: 200px;
         }
     </style>
 </head>
 <body>
-    <nav class="navbar">
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Client</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
+    <header class="header">
+        <div class="logo">
+            <img src="card/logo.png" alt="">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Client</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- <div class="logo">
+        <img src="card/logo.png" alt="">
+        <nav class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Client</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </div> -->
     <div class="image">
         <img src="card/banner.png" alt="">
     </div>
     <div class="bdy">
-        <h1>Popular foods</h1>
+        <h1 class="menu">Popular foods</h1>
         
         <div class="foodmenu">
             <div class="item">
@@ -134,29 +188,86 @@
         <div class="clients">
             <div class="client">
                 <img src="card/client1.jpg" alt="">
+                <div>
+                    <p><b>Miss Juli</b></p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
             </div>
     
             <div class="client">
                 <img src="card/client2.jpg" alt="">
+                <div>
+                    <p><b>Miss Juli</b></p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
             </div>
     
             <div class="client">
                 <img src="card/client3.jpg" alt="">
+                <div>
+                    <p><b>Miss Juli</b></p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
             </div>
     
             <div class="client">
                 <img src="card/client2.jpg" alt="">
+                <div>
+                    <p><b>Miss Juli</b></p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
             </div>
     
             <div class="client">
                 <img src="card/client3.jpg" alt="">
+                <div>
+                    <p><b>Miss Juli</b></p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
             </div>
     
             <div class="client">
                 <img src="card/client1.jpg" alt="">
+                <div>
+                    <p><b>Miss Juli</b></p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
             </div>
         </div>
     </div>
 
+    <section class="gallery">
+        <h1 class="glry">Gallery Section</h1>
+
+        <div class="pgal">
+            <div class="gal">
+                <img src="card/item1.jpg" alt="">
+            </div>
+    
+            <div class="gal">
+                <img src="card/item1.jpg" alt="">
+            </div>
+    
+            <div class="gal">
+                <img src="card/item1.jpg" alt="">
+            </div>
+    
+            <div class="gal">
+                <img src="card/item1.jpg" alt="">
+            </div>
+    
+            <div class="gal">
+                <img src="card/item1.jpg" alt="">
+            </div>
+    
+            <div class="gal">
+                <img src="card/item1.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <footer style="background-color: rgb(241, 191, 129); text-align: center;">
+        <p>&copy; 2024 NHRF <br>
+            October 5, 2024at 07:36:02 AM</p>
+    </footer>
 </body>
 </html>
